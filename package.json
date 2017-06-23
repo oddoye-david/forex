@@ -1,0 +1,41 @@
+{
+  "name": "forex",
+  "version": "1.0.0",
+  "description": "Convert from one currency tot he other",
+  "main": "dist/forex.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oddoye-david/forex.git"
+  },
+  "scripts": {
+    "start": "yarn run compile && node dist/server.js",
+    "predev": "rimraf ./dist/",
+    "dev": "NODE_ENV='development' nodemon --watch src --exec yarn start",
+    "test": "jest",
+    "compile": "babel --out-dir dist src",
+    "prepublish": "yarn run compile",
+    "postinstall": "yarn run compile",
+    "lint": "eslint src"
+  },
+  "author": "David Oddoye <oddoyedavid@gmail.com>",
+  "license": "MIT License",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "cheerio": "^1.0.0-rc.1",
+    "random-ua": "^0.0.6"
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1"
+  }
+}
