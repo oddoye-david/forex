@@ -26,7 +26,7 @@ async function convertForex(amount, fromCurrency, toCurrency) {
     const result = $('span.uccResultAmount').text().replace('GHS', '').replace(/\s\s*$/, '');
     const a = {
       amount: result,
-      exchangeRate: Number(stripCommas(result) / stripCommas(amount)).toFixed(2),
+      exchangeRate: Number(stripCommas(result.toString()) / stripCommas(amount.toString())).toFixed(2),
     };
 
     return a;
