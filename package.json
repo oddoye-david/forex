@@ -8,13 +8,13 @@
     "url": "git+https://github.com/oddoye-david/forex.git"
   },
   "scripts": {
-    "start": "yarn run compile && node dist/server.js",
+    "start": "npm run compile && node dist/server.js",
     "predev": "rimraf ./dist/",
-    "dev": "NODE_ENV='development' nodemon --watch src --exec yarn start",
+    "dev": "NODE_ENV='development' nodemon --watch src --exec npm start",
     "test": "jest",
     "compile": "babel --out-dir dist src",
-    "prepublish": "yarn run compile",
-    "postinstall": "yarn run compile",
+    "prepublish": "npm run compile",
+    "postinstall": "npm run compile",
     "lint": "eslint src"
   },
   "author": "David Oddoye <oddoyedavid@gmail.com>",
