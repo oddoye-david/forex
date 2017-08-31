@@ -1,5 +1,7 @@
 'use strict';
 
+require("babel-polyfill");
+
 import axios from 'axios';
 import cheerio from 'cheerio';
 import randomUA from 'random-ua';

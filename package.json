@@ -25,6 +25,9 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-meteor": "^6.26.0",
+    "babel-plugin-syntax-async-functions": "^6.1.4",
+    "babel-plugin-transform-regenerator": "^6.1.4",
+    "babel-polyfill": "^6.1.4",
     "cheerio": "^1.0.0-rc.1",
     "random-ua": "^0.0.6"
   },
