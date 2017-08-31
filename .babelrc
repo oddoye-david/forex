@@ -1,8 +1,8 @@
 {
-  "presets": ["es2015", "meteor"],
+  "presets": ["es2015"],
   "plugins": [
     "transform-object-rest-spread",
-    "syntax-async-functions",
-    "transform-regenerator"
+    "transform-async-to-generator",
+    "plugin-transform-runtime"
   ]
 }
